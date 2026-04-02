@@ -35,6 +35,6 @@ def newton_min_dampened(f: callable[[float], float], f_: callable[[float], float
             if math.isclose(f_x, 0.0):
                 break
             d = d/2
-            x_next = x - d * (f_x/f_x)
+            x_next = x - d * (fx/f_x)
         x = x_next
     return x
